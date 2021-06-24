@@ -5,7 +5,7 @@
   <body>
     <ul>
     {%- for developers in collections.developers -%}
-      <li>{{ developers.data.githubHandle }}</li>
+      <li><a href="{{ developers.url | url }}" >{{ developers.data.githubHandle }}</a></li>
     {%- endfor -%}
     </ul>
   </body>
