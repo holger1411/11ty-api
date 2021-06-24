@@ -3,9 +3,6 @@
   <head>
   </head>
   <body>
-    <img src="{{ github.url }}" />
-    <p>Hi, my Github handle is <a href="https://github.com/{{ githubHandle }}" target="_blank">{{ githubHandle }}</a>
-My Twitter handle is {{ github.twitter }} and I have {{ github.followers }}
-    </p>
+{% githubProfile githubHandle %}
   </body>
 </html>
